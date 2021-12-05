@@ -120,20 +120,20 @@ h1{
 }
 /* History StyleSheet */
 /* Styles for Benefits/Risks/Future Tabs */
-#firstauto{}
-.firstauto img{
+#rfb{}
+.rfb img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#firstauto .firstauto{
+#rfb .rfb{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 50px 0;
 }
-#firstauto .sectiontitle{
+#rfb .sectiontitle{
     font-size: 4rem;
     font-weight: 200;
     color: salmon;
@@ -142,21 +142,21 @@ h1{
     letter-spacing: .2rem;
     text-align: center;
 }
-#firstauto .firsttop p{
+#rfb .rfbtop p{
     font-size: 1rem;
     margin-top: 5px;
     line-height: 1.2rem;
     font-weight: 300;
     letter-spacing: .2rem;
 }
-#firstauto .firstbottom{
+#rfb .rfbbottom{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-#firstauto .firstitem{
+#rfb .rfbitem{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -171,7 +171,7 @@ h1{
     z-index: 1;
     overflow: hidden;
 }
-#firstauto .firstitem::after{
+#rfb .rfbitem::after{
     content: '';
     position: absolute;
     left: 0;
@@ -183,23 +183,23 @@ h1{
     z-index: -1;
     overflow: hidden;
 }
-#firstauto .firstbottom .icon{
+#rfb .rfbbottom .icon{
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
-#firstauto .firstbottom .icon img{
+#rfb .rfbitem .icon img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#firstauto .firstitem h2{
+#rfb .rfbitem h2{
     font-size: 2rem;
     color:salmon;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-#firstauto .firstitem p{
+#rfb .rfbitem p{
     text-align: left;
     font-size: 1rem;
     line-height: 1.5rem;

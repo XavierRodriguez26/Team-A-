@@ -119,6 +119,88 @@ h1{
     text-align: center;
 }
 /* History StyleSheet */
+.sectiontitle{
+    font-size: 4rem;
+    font-weight: 200;
+    color: salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#history{}
+#history .history{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#history .boxheaders h1{
+    margin-bottom: 50px;
+}
+#history .allhistory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#history .historyitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#history .historyinfo{
+    padding: 30px;
+    flex-basis: 50%;
+    background-color:gray;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#history .historyinfo h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#history .historyinfo h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#history .historyinfo p{
+    font-style: italic;
+}
+#history .historyimage{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#history .historyimage:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+}
+#history .historyimage img{
+    transition: .3s ease transform;
+}
+#history .historyitem:hover .historyimage img{
+    transform: scale(1.1)
+}
+
+
 /* Styles for Benefits/Risks/Future Tabs */
 #rfb{}
 .rfb img{

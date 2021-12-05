@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    font-family:  sans-serif;
+}
 .banner{
     width: 100%;
     height: 100vh;
@@ -11,15 +14,16 @@
     background-position: center;
 }
 .navbar{
-    width: 85%;
+    width: 90%;
     margin: auto;
-    padding: 35px 0;
+    padding: 2% 6%;
     display: flex;
-    align-items:  center;
+    align-items: center;
     justify-content: space-between;
 }
 .logo{
     cursor: pointer;
+    color:salmon;
 }
 .navbar ul li{
     list-style: none;
@@ -104,7 +108,7 @@ h1{
 .banner2{   
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.stockvault.net/data/2019/04/14/263849/preview16.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.itransition.com/static/d3a35165e9d561a4a598ca7e0fbb9c3e/autonomous-vehicle-sensors-header-2560x1200[1].jpg);
     background-size: cover;
     background-position: center;
 }
@@ -115,22 +119,90 @@ h1{
     text-align: center;
 }
 /* History StyleSheet */
-.box{
-    width: 80%;
-    Display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
+/* Styles for Benefits/Risks/Future Tabs */
+#firstauto{}
+.firstauto img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.historytopics{
-    flex-basis: 48%;
+#firstauto .firstauto{
+    flex-direction: column;
     text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: white;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
-.historytopics img{
-    width: 25%;
-    border-radius: 7px;
+#firstauto .sectiontitle{
+    font-size: 4rem;
+    font-weight: 200;
+    color: salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#firstauto .firsttop p{
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+#firstauto .firstbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#firstauto .firstitem{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("https://image.freepik.com/free-vector/white-technology-background-concept_23-2148403398.jpg");
+    background-size: cover;
+    margin: 10px 5%;
     position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#firstauto .firstitem::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+    overflow: hidden;
+}
+#firstauto .firstbottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#firstauto .firstbottom .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#firstauto .firstitem h2{
+    font-size: 2rem;
+    color:salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#firstauto .firstitem p{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: sans-serif;
 }

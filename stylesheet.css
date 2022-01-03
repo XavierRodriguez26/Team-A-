@@ -1,12 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 html{
-    background-color: dimgrey;
+    font-family:  sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.itransition.com/static/d3a35165e9d561a4a598ca7e0fbb9c3e/autonomous-vehicle-sensors-header-2560x1200[1].jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+    color:salmon;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; 
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: salmon;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid salmon;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: salmon;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   z-index: -1;
+}
+button:hover span{
+    width: 100%;
+    transition: 0.5s;
+    border: none;
+}
+
+/*OverView StyleSheet */
+
+.overview{
+    color: salmon;
+    text-align: center;
 }
 h1{
+    color: salmon
+}
+.banner2{   
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.itransition.com/static/d3a35165e9d561a4a598ca7e0fbb9c3e/autonomous-vehicle-sensors-header-2560x1200[1].jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* All Page Heading Styles */
+.pageheading{
+    color: salmon;
     text-align: center;
-    color: lightskyblue;
+}
+/* History StyleSheet */
+.sectiontitle{
+    font-size: 4rem;
+    font-weight: 200;
+    color: salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#history{}
+#history .history{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#history .boxheaders h1{
+    margin-bottom: 50px;
+}
+#history .allhistory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#history .historyitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#history .historyinfo{
+    padding: 30px;
+    flex-basis: 50%;
+    background-color:gray;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#history .historyinfo h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#history .historyinfo h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#history .historyinfo p{
+    font-style: italic;
+}
+#history .historyimage{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#history .historyimage:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+}
+#history .historyimage img{
+    transition: .3s ease transform;
+}
+#history .historyitem:hover .historyimage img{
+    transform: scale(1.1)
 }
 
-h2{
-    color:lightskyblue;
-}
 
+/* Styles for Benefits/Risks/Future Tabs */
+#rfb{}
+.rfb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#rfb .rfb{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+#rfb .sectiontitle{
+    font-size: 4rem;
+    font-weight: 200;
+    color: salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#rfb .rfbtop p{
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+#rfb .rfbbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#rfb .rfbitem{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("https://image.freepik.com/free-vector/white-technology-background-concept_23-2148403398.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#rfb .rfbitem::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+    overflow: hidden;
+}
+#rfb .rfbbottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#rfb .rfbitem .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#rfb .rfbitem h2{
+    font-size: 2rem;
+    color:salmon;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#rfb .rfbitem p{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: sans-serif;
+}
